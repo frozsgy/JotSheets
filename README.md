@@ -12,6 +12,7 @@ JotSheets was developed as an internship project at JotForm.
 * [PHP 7 or higher](http://www.php.net/)
 * [mySQL](https://www.mysql.com/) or [MariaDB](https://mariadb.org/)
 * [Google APIs Client Library for PHP](https://github.com/googleapis/google-api-php-client)
+* Apache server with RewriteEngine on
 
 ## Installation ##
 
