@@ -12,7 +12,12 @@ JotSheets was developed as an internship project at JotForm.
 * [PHP 7 or higher](http://www.php.net/)
 * [mySQL](https://www.mysql.com/) or [MariaDB](https://mariadb.org/)
 * [Google APIs Client Library for PHP](https://github.com/googleapis/google-api-php-client)
+* [JotForm API Client for PHP](https://github.com/jotform/jotform-api-php)
 * Apache server with RewriteEngine on
+
+### Used Libraries ###
+
+* This project uses [HTML5Sortable](https://github.com/lukasoppermann/html5sortable) JavaScript library for drag & drop sort buttons.
 
 ## Installation ##
 
@@ -22,8 +27,16 @@ After **downloading the release**, you need to do the following changes in order
 * Update the server information in `./class/server.php`
 * Fill in the API keys in `./class/google.php`
 * Install Google APIs Client Library for PHP under `./class/google/`.
+* Install JotForm API Client for PHP under `./class/jotform/`.
+
+### Notes ###
+
+* The Google integrations class will look for the autoloader at the following location: `./class/google/vendor/autoload.php`
+* The JotForm integrations class will look for the JotForm API Client at the following location: `./class/jotform/JotForm.php`
+* Please make sure that both classes can read the library files properly.
 
 ## Live Demo ##
+
 Available at http://jotform.ozanalpay.com
 
 ## Comments, Pull Requests, Bugs ##
